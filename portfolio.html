@@ -25,45 +25,145 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="header-logo link" href="./index.html">
+          <a class="header-logo" href="./index.html">
             Web<span class="header-logo-studio">Studio</span></a
           >
 
-          <ul class="header-menu list">
+          <ul class="header-menu">
             <li class="header-menu-item">
-              <a class="header-menu-link link" href="./index.html">Studio</a>
+              <a class="header-menu-link" href="./index.html">Studio</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link link portfolio" href="./portfolio.html"
+              <a class="header-menu-link portfolio" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link link" href="">Contacts</a>
+              <a class="header-menu-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <address class="header-address">
-          <ul class="header-address-list list">
+          <ul class="header-address-list">
             <li class="header-address-item">
-              <a
-                class="header-address-link link"
-                href="mailto:info@devstudio.com"
+              <a class="header-address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-address-item">
-              <a class="header-address-link link" href="tel:+110001111111"
+              <a class="header-address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!--Header burger-->
+        <button class="header-burger js-open-menu" type="button">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-container js-menu-container">
+        <button type="button" class="mobile-close-btn js-close-menu">
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link portfolio" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item">
+                <a class="mobile-tel-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="mobile-address-item">
+                <a class="mobile-mail-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-soc-list">
+            <li class="mobile-soc-item">
+              <a
+                class="mobile-soc-link"
+                href=""
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a
+                class="mobile-soc-link"
+                href=""
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a
+                class="mobile-soc-link"
+                href=""
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a
+                class="mobile-soc-link"
+                href=""
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <!--Main-->
+    <!-- Main
     <main>
       <section class="menu">
         <div class="container">
@@ -300,7 +400,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-con">
           <a class="footer-logo link" href="./index.html">
@@ -389,6 +489,13 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
